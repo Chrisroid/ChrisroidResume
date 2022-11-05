@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/chris_fragment">
 
+    <fragment
+        android:id="@+id/chris_fragment"
+        android:name="com.auto.chrisroidresume.ChrisFragment"
+        android:label="Chris"
+        tools:layout="@layout/fragment_chris" >
+        <action
+            android:id="@+id/action_chrisFragment_to_skillsFragment"
+            app:destination="@id/skills_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/skills_fragment"
+        android:name="com.auto.chrisroidresume.SkillsFragment"
+        android:label="fragment_skills"
+        tools:layout="@layout/fragment_skills" >
+        <action
+            android:id="@+id/action_skillsFragment_to_appFragment"
+            app:destination="@id/app_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/app_fragment"
+        android:name="com.auto.chrisroidresume.AppFragment"
+        android:label="fragment_app"
+        tools:layout="@layout/fragment_app" />
 </navigation>

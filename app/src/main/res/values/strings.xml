@@ -7,4 +7,7 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_fragment">app fragment</string>
+    <string name="chris_fragment">chris fragment</string>
+    <string name="skills_fragment">skills fragment</string>
 </resources>

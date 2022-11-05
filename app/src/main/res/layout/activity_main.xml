@@ -4,16 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     tools:context=".MainActivity">
 
-    <me.ibrahimsn.lib.SmoothBottomBar
-        android:id="@+id/bottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:backgroundColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav" />
+        app:layout_constraintTop_toBottomOf="parent"
+        app:navGraph='@navigation/nav' />
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#888888"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorHeight="4dp"
+        app:abb_indicatorColor="@color/black"
+        app:abb_indicatorMargin="16dp"
+        app:abb_selectedIndex="0"
+        app:abb_badgeBackgroundColor="@color/black"
+        app:abb_selectedTabType="icon"
+        app:abb_textAppearance="@style/Fonter"
+        app:abb_tabs="@menu/bottom_nav"
+        app:abb_tabColor="@color/black"
+        app:abb_tabColorSelected="@color/white"
+        app:abb_rippleEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
