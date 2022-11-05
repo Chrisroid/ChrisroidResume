@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Chrisroid Resume</string>
+    <string name="app_name">"CV Chrisroid "</string>
+    <string name="chris">Chris</string>
+    <string name="app_fragment">app fragment</string>
+    <string name="chris_fragment">chris fragment</string>
+    <string name="skills_fragment">skills fragment</string>
+    <string name="name">Chris Asarhasa</string>
+    <string name="chrisroid">Chrisroid</string>
+    <string name="twitter">\@chrisroid</string>
+    <string name="android">Android</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="flutter">Flutter</string>
+    <string name="dart">Dart</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY</string>
+    <string name="hello_blank_fragment">CONTENT</string>
+    <string name="skills">"Compétences "</string>
+    <string name="app">L\'application</string>
+    <string name="social_media">Des médias sociaux</string>
+    <string name="jb">Développeur Android (Kotlin)</string>
+    <string name="credi">Merci à moi-même, à HNG et à toutes les bibliothèques Github d\'avoir fait de cette application une réalité pour avoir rendu cette application possible</string>
 </resources>

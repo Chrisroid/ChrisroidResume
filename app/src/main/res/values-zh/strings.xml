@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Chrisroid Resume</string>
+    <string name="app_name">"简历 "</string>
+    <string name="chris">Chris</string>
+    <string name="app_fragment">app fragment</string>
+    <string name="chris_fragment">chris fragment</string>
+    <string name="skills_fragment">skills fragment</string>
+    <string name="name">Chris Asarhasa</string>
+    <string name="chrisroid">Chrisroid</string>
+    <string name="twitter">\@chrisroid</string>
+    <string name="android">安卓</string>
+    <string name="kotlin">"科特林 "</string>
+    <string name="flutter">扑</string>
+    <string name="dart">镖</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY</string>
+    <string name="hello_blank_fragment">CONTENT</string>
+    <string name="skills">技能</string>
+    <string name="app">"应用程序 "</string>
+    <string name="social_media">"社交媒体 "</string>
+    <string name="jb">"安卓开发者 (Kotlin) "</string>
+    <string name="credi">感谢我自己、HNG 和所有 Github 库使这个应用程序成为现实，使这个应用程序成为可能</string>
 </resources>

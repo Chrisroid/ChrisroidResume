@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Chrisroid Resume</string>
+    <string name="app_name">استئناف Chrisroid</string>
+    <string name="chris">Chris</string>
+    <string name="app_fragment">app fragment</string>
+    <string name="chris_fragment">chris fragment</string>
+    <string name="skills_fragment">skills fragment</string>
+    <string name="name">Chris Asarhasa</string>
+    <string name="chrisroid">Chrisroid</string>
+    <string name="twitter">\@chrisroid</string>
+    <string name="android">"ذكري المظهر "</string>
+    <string name="kotlin">كوتلن</string>
+    <string name="flutter">رفرفة</string>
+    <string name="dart">سهم</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY</string>
+    <string name="hello_blank_fragment">CONTENT</string>
+    <string name="credi">الائتمان لنفسي ، HNG وجميع مكتبات Github لجعل هذا التطبيق حقيقة واقعة لجعل هذا التطبيق ممكنًا</string>
+    <string name="jb">"مطور Android (Kotlin) "</string>
+    <string name="social_media">"وسائل التواصل الاجتماعي "</string>
+    <string name="skills">مهارات</string>
+    <string name="app">التطبيق</string>
 </resources>
