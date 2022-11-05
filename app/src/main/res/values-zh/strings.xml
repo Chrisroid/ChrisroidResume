@@ -19,5 +19,5 @@
     <string name="app">"应用程序 "</string>
     <string name="social_media">"社交媒体 "</string>
     <string name="jb">"安卓开发者 (Kotlin) "</string>
-    <string name="credi">感谢我自己、HNG 和所有 Github 库使这个应用程序成为现实，使这个应用程序成为可能</string>
+    <string name="credi">我以写代码为生，如果你雇用我，我会写很多代码，你会为了我解雇你现在所有的代码编写者</string>
 </resources>
