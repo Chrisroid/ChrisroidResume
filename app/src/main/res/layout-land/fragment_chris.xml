@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChrisFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        app:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:text="@string/jb"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@id/job">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/slack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/chrisroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/chrisroid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+            app:fontFamily="serif-monospace"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:textAllCaps="false" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/social_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/social_media"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:fontFamily="monospace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textAllCaps="true" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="16dp"
+            android:elevation="15dp"
+            android:background="@drawable/back"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <ImageView
+                android:id="@+id/github_logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/github"
+                tools:src="@drawable/github" />
+
+            <TextView
+                android:id="@+id/github_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/twitter"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#040404"
+                app:fontFamily="serif-monospace"
+                app:layout_constraintBottom_toBottomOf="@+id/github_logo"
+                app:layout_constraintStart_toEndOf="@+id/github_logo"
+                app:layout_constraintTop_toTopOf="@+id/github_logo" />
+
+            <ImageView
+                android:id="@+id/github_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/github_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/github_text"
+                app:srcCompat="@drawable/ic_baseline_arrow_outward_24"
+                tools:src="@drawable/ic_baseline_arrow_outward_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="8dp"
+            android:elevation="15dp"
+            android:background="@drawable/back"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/social_media">
+
+            <ImageView
+                android:id="@+id/twitter_logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/twitter"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@drawable/twitter" />
+
+            <TextView
+                android:id="@+id/twitter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/twitter"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#000000"
+                app:fontFamily="serif-monospace"
+                app:layout_constraintBottom_toBottomOf="@+id/twitter_logo"
+                app:layout_constraintStart_toEndOf="@+id/twitter_logo"
+                app:layout_constraintTop_toTopOf="@+id/twitter_logo" />
+
+            <ImageView
+                android:id="@+id/twitter_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/twitter_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/twitter_text"
+                app:srcCompat="@drawable/ic_baseline_arrow_outward_24"
+                tools:src="@drawable/ic_baseline_arrow_outward_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout7"
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:elevation="15dp"
+            android:background="@drawable/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <ImageView
+                android:id="@+id/linkedin_logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/linkedin"
+                tools:src="@drawable/linkedin" />
+
+            <TextView
+                android:id="@+id/_linkedin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                app:fontFamily="serif-monospace"
+                app:layout_constraintBottom_toBottomOf="@+id/linkedin_logo"
+                app:layout_constraintStart_toEndOf="@+id/linkedin_logo"
+                app:layout_constraintTop_toTopOf="@+id/linkedin_logo" />
+
+            <ImageView
+                android:id="@+id/linkedin_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/_linkedin_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/_linkedin_text"
+                app:srcCompat="@drawable/ic_baseline_arrow_outward_24"
+                tools:src="@drawable/ic_baseline_arrow_outward_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

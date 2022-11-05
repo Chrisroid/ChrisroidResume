@@ -15,4 +15,9 @@
     <string name="social_media">Social Media</string>
     <string name="twitter">\@chrisroid</string>
     <string name="jb">Android Developer (Kotlin)</string>
+    <string name="android">Android</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="flutter">Flutter</string>
+    <string name="dart">Dart</string>
+    <string name="credi">Credit to Myself, HNG and all Github Libraries for making this app a reality for making this app possible</string>
 </resources>
