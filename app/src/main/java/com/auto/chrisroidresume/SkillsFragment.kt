@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.auto.chrisroidresume.databinding.FragmentChrisBinding
+import com.auto.chrisroidresume.databinding.FragmentSkillsBinding
 
 // TODO: Rename parameter arguments, choose names that match
 
@@ -15,6 +17,9 @@ import android.view.ViewGroup
  * create an instance of this fragment.
  */
 class SkillsFragment : Fragment() {
+
+    private var _binding: FragmentSkillsBinding? = null
+    private val binding get() = _binding!!
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +32,7 @@ class SkillsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_skills, container, false)
+        _binding = FragmentSkillsBinding.inflate(inflater, container, false)
+        return binding.root
     }
 }

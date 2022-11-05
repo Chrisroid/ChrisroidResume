@@ -10,4 +10,9 @@
     <string name="app_fragment">app fragment</string>
     <string name="chris_fragment">chris fragment</string>
     <string name="skills_fragment">skills fragment</string>
+    <string name="name">Chris Asarhasa</string>
+    <string name="chrisroid">Chrisroid</string>
+    <string name="social_media">Social Media</string>
+    <string name="twitter">\@chrisroid</string>
+    <string name="jb">Android Developer (Kotlin)</string>
 </resources>
